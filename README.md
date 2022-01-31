@@ -1,1 +1,3 @@
 # PortFolio
+
+![Preview](preview.png)
