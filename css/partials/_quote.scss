@@ -1,0 +1,21 @@
+.quote{
+	color: #fff;
+	background-color: #030303;
+	.quote-container{
+		padding: 20px 0;
+		.box{
+			padding: 3vw;
+			background-color: rgba(255, 255, 255, 0.2);
+			border-bottom: 5px solid #8B12EB;
+			i{
+				font-size: 2em;
+				display: block;
+				text-align: center;
+				margin-bottom: 10px;
+			}
+			p{
+				font-size: 1em;
+			}
+		}
+	}
+}

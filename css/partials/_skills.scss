@@ -1,0 +1,55 @@
+.skills-showcase{
+	display: flex;
+	margin: 20px 0 50px 0;
+	background-color: #030303;
+	.skills, .skills-banner{
+		width: 50%;
+	}
+	.skills-banner{
+		background: url('../images/projects-banner.jpg');
+		background-size: cover;
+		background-position: center;
+		clip-path: polygon(100% 0, 100% 100%, 0 100%, 10% 0);
+		
+	}
+	.skills{
+		color: #fff;
+		padding: 30px;
+		h1{
+			margin-bottom: 20px;
+		}
+	}
+}
+.skills-container{
+	display: grid;
+	grid-template-rows: repeat(3, 100px);
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+	.skill{
+		background-color: rgba(255, 255, 255, 0.2);
+		text-align: center;
+		font-size: 1.2em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		img{
+			margin-bottom: 5px;
+			height: 45px;
+			width: 45px;
+			
+		}
+		transform: scale(0);
+	}
+	&.active .skill{
+		animation: pop 0.3s forwards;
+		&:nth-child(2){ animation-delay: 0.1s }
+		&:nth-child(3){ animation-delay: 0.2s }
+		&:nth-child(6){ animation-delay: 0.3s }
+		&:nth-child(9){ animation-delay: 0.4s }
+		&:nth-child(8){ animation-delay: 0.5s }
+		&:nth-child(7){ animation-delay: 0.6s }
+		&:nth-child(4){ animation-delay: 0.7s }
+		&:nth-child(5){ animation-delay: 0.8s }
+	}
+}

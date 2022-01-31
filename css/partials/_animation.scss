@@ -1,0 +1,125 @@
+@keyframes pop{
+	0%{
+		transform: scale(0);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+
+
+@keyframes write{
+	0%, 100%{
+		width: 0ch;
+	}
+	35%, 75%{
+		width: 14ch;
+	}
+}
+
+
+@keyframes bubblefloat1{
+	0%, 100%{
+		top: 19%;
+		left: 66%;
+	}
+	50%{
+		top: -9%;
+		left: 70%;
+	}
+}
+@keyframes bubblefloat2{
+	0%, 100%{
+		left: 13%;
+	}
+	50%{
+		left: -10%;
+	}
+}
+@keyframes bubblefloat3{
+	0%, 100%{
+		left: 88%;
+		top: 45%;
+	}
+	50%{
+		left: 108%;
+		top: 40%;
+	}
+}
+@keyframes bubblefloat4{
+	0%, 100%{
+		left: 30%;
+		top: 80%;
+	}
+	50%{
+		left: 4%;
+		top: 95%;
+	}
+}
+@keyframes bubblefloat5{
+	0%, 100%{
+		left: 80%;
+		top: 70%;
+	}
+	50%{
+		left: 98%;
+		top: 88%;
+	}
+}
+@keyframes bubblefloat6{
+	0%, 100%{
+		left: 17%;
+		top: 20%;
+	}
+	50%{
+		left: 2%;
+		top: 5%;
+	}
+}
+
+
+
+
+
+@keyframes slideup{
+	0%{
+		transform: translateY(100%);
+		opacity: 0;
+	}
+	100%{
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+
+@keyframes rotateo{
+	0%, 100%{
+		transform: rotateX(20deg) rotateY(0deg);
+		box-shadow: 3px 0 3px rgba(0, 0, 0, 0.2);
+	}
+	25%{
+		transform: rotateX(0deg) rotateY(20deg);
+		box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	}
+	50%{
+		transform: rotateX(-20deg) rotateY(0deg);
+		box-shadow: -3px 0 3px rgba(0, 0, 0, 0.2);
+	}
+	75%{
+		transform: rotateX(0deg) rotateY(-20deg);
+		box-shadow: 0 -3px 3px rgba(0, 0, 0, 0.2);
+	}
+}
+
+.fa-spinner{
+	animation: spin 1s linear infinite;
+}
+@keyframes spin{
+	0%{
+		transform: rotate(0);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}

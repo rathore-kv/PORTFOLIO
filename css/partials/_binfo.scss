@@ -1,0 +1,42 @@
+.binfo{
+	background: linear-gradient(75deg, #1B1B1B 40%, #030303 40%);
+	color: #fff;
+	h1{
+		padding: 20px 0;
+	}
+	ul{
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		padding-bottom: 10px;
+		li{
+			width: 33.33%;
+			height: 40px;
+			line-height: 40px;
+			margin: 10px 0;
+			font-size: 1.2em;
+			letter-spacing: 2px;
+			word-spacing: 8px;
+			transform: translateY(100px);
+			opacity: 0;	
+			i{
+				display: inline-block;
+				height: 40px;
+				width: 40px;
+				line-height: 40px;
+				text-align: center;
+				border-radius: 50%;
+				margin-right: 15px;
+				background-color: #8B12EB;
+			}
+		}
+		&.active li{
+				animation: slideup 0.3s forwards;
+				@for $i from 2 through 6{
+					&:nth-child(#{$i}){
+						animation-delay: (0.3s + (($i - 1) / 7));
+					}
+				}
+		}
+	}
+}

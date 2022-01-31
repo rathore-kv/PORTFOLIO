@@ -1,0 +1,30 @@
+.main-projects{
+	margin-bottom: 30px;
+}
+.main-project{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 20px 0;
+}
+.main-project .info{
+	width: 50%;
+	h1{
+		
+	}
+	p{
+		font-weight: 200;
+		letter-spacing: 1px;
+		margin: 10px 0 15px 0;
+		a{
+			font-weight: bold;
+			color: #8030BF;
+			text-decoration: underline;
+		}
+	}
+}
+.main-project .img{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+}

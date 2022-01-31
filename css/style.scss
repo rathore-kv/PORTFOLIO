@@ -1,0 +1,57 @@
+@import "partials/font-awesome";
+
+@import "partials/animations";
+
+@import "partials/resets";
+
+
+#loader{
+	height: 100vh;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 9999;
+	position: fixed;
+	top: 0;
+	&:before{
+		content: '';
+		display: inline-block;
+		height: 50px;
+		width: 50px;
+		border-radius: 50%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border: 10px solid #8B12EB;
+		border-right: 10px solid #fff;
+		animation: tspin 0.5s linear infinite;
+	}
+}
+@keyframes tspin{
+	0%{
+		transform: translate(-50%, -50%) rotate(0);
+	}
+	100%{
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
+
+@import "partials/banner";
+
+@import "partials/binfo";
+
+@import "partials/res-showcase";
+
+@import "partials/skills";
+
+@import "partials/main-projects";
+
+@import "partials/projects";
+
+@import "partials/quote";
+
+@import "partials/contact";
+
+@import "partials/footer";
+
+@import "partials/media-query";
